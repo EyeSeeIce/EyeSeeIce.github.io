@@ -752,6 +752,7 @@ header {
 .sec8MidItems {
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -993,7 +994,10 @@ footer {
     .sec3Mid {
         .top {
             ul {
+
                 flex-direction: column;
+                
+
             }
         }
 
@@ -1096,6 +1100,14 @@ footer {
     .arrowClose {
         display: none;
     }
+    .sec6Wrapper{
+        width: 90%;
+    }
+    .sec8MidItems {
+    flex-direction:column;
+    
+
+}
 }
 
 @media (max-width: 1000px) {
@@ -1158,15 +1170,38 @@ footer {
         flex-direction:column;
         justify-content: center;
         align-items:center;
+        width: 100%;
         img{    
-            width: 80%;
+            width: 40%;
             margin: 0 auto;
             position: relative;
         }
     }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 425px) {
+    .sec6Wrapper{
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+
+
+        .sec6Info{
+            width: 100%;
+            font-size:12px;
+            .sec6InfoTitle{
+                font-size:16px;
+            }
+            .sec6InfoSign{
+                font-size: 20px;
+            }
+
+        }
+        
+    }
+
+
     .nav{
         ul{
             li{
@@ -1177,6 +1212,11 @@ footer {
     .botItems{
         display: none;
     }
+    #but1:before,#but2:before,#but3:before{
+        display: none;
+    }
+
+    
 }
 
 

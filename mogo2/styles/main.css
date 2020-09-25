@@ -909,7 +909,14 @@ footer {
     margin-bottom: 0px; }
   .arrow,
   .arrowClose {
-    display: none; } }
+    display: none; }
+  .sec6Wrapper {
+    width: 90%; }
+  .sec8MidItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 @media (max-width: 1000px) {
   .footerWrapper {
@@ -949,14 +956,36 @@ footer {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
     .sec6Wrapper img {
-      width: 80%;
+      width: 40%;
       margin: 0 auto;
       position: relative; } }
 
-@media (max-width: 525px) {
+@media (max-width: 425px) {
+  .sec6Wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%; }
+    .sec6Wrapper .sec6Info {
+      width: 100%;
+      font-size: 12px; }
+      .sec6Wrapper .sec6Info .sec6InfoTitle {
+        font-size: 16px; }
+      .sec6Wrapper .sec6Info .sec6InfoSign {
+        font-size: 20px; }
   .nav ul li {
     display: none; }
   .botItems {
+    display: none; }
+  #but1:before, #but2:before, #but3:before {
     display: none; } }
