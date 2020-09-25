@@ -407,16 +407,20 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px; }
+  padding-top: 20px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .sec5Photo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
-  position: relative; }
+  width: 60%; }
   .sec5Photo img {
-    position: absolute;
     width: 100%;
     height: auto; }
 
@@ -428,6 +432,7 @@ header {
   width: 100%; }
 
 .sec5button {
+  padding: 5px;
   border: 1px solid #e5e5e5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,7 +882,12 @@ footer {
   .headerMid .midSubtitle {
     font-size: 70px; }
   .headerMid .midTitle {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .sec5Mid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 @media (max-width: 730px) {
   .midCont {
@@ -916,3 +926,30 @@ footer {
       display: block; }
   .footerTopContent3 {
     width: 100%; } }
+
+@media (max-width: 721px) {
+  .headerMid .midSubtitle {
+    font-size: 40px; }
+  .headerMid .midTitle {
+    font-size: 22px; }
+  .midCont .iPan img {
+    width: 60%;
+    margin: 0 auto; }
+  .sec5Mid .accordion {
+    padding: 0;
+    padding-top: 10px; }
+  .sec6Wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .sec6Wrapper img {
+      width: 80%;
+      margin: 0 auto;
+      position: relative; } }

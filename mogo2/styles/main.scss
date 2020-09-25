@@ -495,22 +495,25 @@ header {
 .sec5Mid {
     display: flex;
     padding-top: 20px;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .sec5Photo {
     display: flex;
     width: 60%;
-    position: relative;
+
 
     img {
-        position: absolute;
+
         width: 100%;
         height: auto;
     }
 }
 
 .accordion {
+
     width: 60%;
     padding-left: 20px;
 
@@ -522,9 +525,11 @@ header {
 .accordion-item__trigger {
     width: 100%;
 
+
 }
 
 .sec5button {
+    padding: 5px;
     border: 1px solid #e5e5e5;
     display: flex;
     align-items: center;
@@ -1055,6 +1060,10 @@ footer {
             font-size: 32px
         }
     }
+
+    .sec5Mid {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 730px) {
@@ -1101,9 +1110,10 @@ footer {
 
     .footerTopContent2 {
         width: 40%;
-            .accordion-item--active{
-                display: block;
-            }
+
+        .accordion-item--active {
+            display: block;
+        }
 
     }
 
@@ -1112,4 +1122,45 @@ footer {
 
     }
 
+}
+
+@media (max-width: 721px) {
+    .headerMid {
+        .midSubtitle {
+            font-size: 40px;
+        }
+
+        .midTitle {
+            font-size: 22px
+        }
+    }
+
+    .midCont {
+
+        .iPan {
+
+            img {
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+
+    }
+    .sec5Mid{
+        .accordion{
+            padding: 0;
+            padding-top: 10px;
+            
+    }
+    }
+    .sec6Wrapper{
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        img{    
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+    }
 }
