@@ -283,6 +283,9 @@ header {
 .sec3Wrapper {
   width: 80%;
   margin: 0 auto; }
+  .sec3Wrapper .secSubtitle {
+    text-align: center;
+    width: 100%; }
 
 .sec3Mid {
   display: -webkit-box;
@@ -311,10 +314,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     margin: 0 auto;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     width: 100%;
     min-width: 200px;
     max-width: 260px; }
@@ -366,6 +369,7 @@ header {
 .sec4Wrapper {
   width: 100%;
   background: url("../assest/img/2layer.png") no-repeat;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover; }
 
@@ -529,10 +533,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
   position: relative; }
   .sec6Photo img {
-    position: absolute;
     width: 100%;
     height: auto; }
 
@@ -877,6 +879,13 @@ footer {
 @media (max-width: 720px) {
   .headerMid {
     margin-top: 70px; }
+  .sec6Photo {
+    width: 50%;
+    position: relative; }
+    .sec6Photo img {
+      position: absolute;
+      width: 100%;
+      height: auto; }
   .sec2Items ul li {
     padding: 10px 0; }
     .sec2Items ul li span {
@@ -1011,4 +1020,16 @@ footer {
     display: none; }
   .headerMid .midSubtitle {
     margin-top: 20px;
-    line-height: 72px; } }
+    line-height: 72px; }
+  .sec3 .sec3Wrapper {
+    width: 100%; }
+  .sec3 .sec3Mid {
+    width: 100%; }
+    .sec3 .sec3Mid .top {
+      width: 100%; }
+      .sec3 .sec3Mid .top ul li .item {
+        width: 100%; }
+  .sec6Wrapper .sec6Info {
+    padding-left: 0px; }
+  .man {
+    width: 90%; } }

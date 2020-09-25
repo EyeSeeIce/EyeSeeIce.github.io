@@ -335,6 +335,10 @@ header {
 .sec3Wrapper {
     width: 80%;
     margin: 0 auto;
+    .secSubtitle{
+        text-align:center;
+        width: 100%; 
+    }
 
 }
 
@@ -358,9 +362,10 @@ header {
 
 
         li {
+            
             display: flex;
+            justify-content: flex-end;
             margin: 0 auto;
-            justify-content: center;
             width: 100%;
             min-width: 200px;
             max-width: 260px;
@@ -431,6 +436,7 @@ header {
 .sec4Wrapper {
     width: 100%;
     background: url('../assest/img/2layer.png') no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
@@ -629,11 +635,11 @@ header {
 
 .sec6Photo {
     display: flex;
-    width: 50%;
+    
     position: relative;
 
     img {
-        position: absolute;
+    
         width: 100%;
         height: auto;
 
@@ -1035,6 +1041,19 @@ footer {
     .headerMid {
         margin-top: 70px;
     }
+    .sec6Photo {
+
+    width: 50%;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+
+    }
+}
+
 
     .sec2Items {
         ul {
@@ -1261,6 +1280,34 @@ footer {
         margin-top: 20px;
         line-height: 72px;
         }
+    }
+    .sec3{
+        .sec3Wrapper{width: 100%;   }
+        .sec3Mid{
+            width: 100%;    
+            .top{
+                width: 100%;    
+                
+                ul{
+                    
+                    li{
+                        
+                        .item{
+                        
+                            width: 100%;    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sec6Wrapper{
+        .sec6Info{
+            padding-left: 0px;
+        }
+    }
+    .man{
+        width: 90%;
     }
 
 
