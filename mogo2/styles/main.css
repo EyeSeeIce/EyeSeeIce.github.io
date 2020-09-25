@@ -25,6 +25,7 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .headerTop .nav {
+    display: block;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase; }
@@ -953,3 +954,9 @@ footer {
       width: 80%;
       margin: 0 auto;
       position: relative; } }
+
+@media (max-width: 525px) {
+  .nav ul li {
+    display: none; }
+  .botItems {
+    display: none; } }
