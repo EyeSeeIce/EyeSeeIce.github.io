@@ -19,6 +19,7 @@ header {
 }
 
 .headerTop {
+    position:  relative;
     padding-top: 28px;
     display: flex;
     color: #ffffff;
@@ -494,38 +495,40 @@ header {
 .secArticle {}
 
 .sec5Mid {
+    
     display: flex;
     padding-top: 20px;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    position: relative;
 
 }
 
 .sec5Photo {
     display: flex;
+    
     width: 60%;
-
-
     img {
-
         width: 100%;
         height: auto;
     }
 }
 
 .accordion {
-
+    
     width: 60%;
     padding-left: 20px;
 
 
 }
 
-.accordion-item {}
+.accordion-item {
+
+}
 
 .accordion-item__trigger {
     width: 100%;
-
+    display: flex;
 
 }
 
@@ -598,7 +601,7 @@ header {
 .accordion-item__content {}
 
 .sec5Content {
-    max-height: 150px;
+    max-height: 130px;
     overflow-y: auto;
     border: 1px solid #e5e5e5;
     border-top: none;
@@ -1005,7 +1008,7 @@ footer {
             display: none;
         }
     }
-
+    
     .sec2Items {
         ul {
             li {
@@ -1030,6 +1033,9 @@ footer {
 }
 
 @media (max-width: 720px) {
+    .headerMid {
+            margin-top: 70px;
+                }
     .sec2Items {
         ul {
             li {
@@ -1159,8 +1165,15 @@ footer {
         }
 
     }
+    .sec5Wrapper{
+        width: 100%;
+
+    }
+
     .sec5Mid{
+
         .accordion{
+            width: 70%;
             padding: 0;
             padding-top: 10px;
             
@@ -1200,7 +1213,18 @@ footer {
         }
         
     }
+    .headerTop{
+        justify-content: center;
+        
+    }
+    .menu-toggle{
+    display: block;
+}
+    .logo{
+        margin-left: 20px;
 
+    }
+    
 
     .nav{
         ul{

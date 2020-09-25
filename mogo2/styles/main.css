@@ -13,6 +13,7 @@ header {
   margin: 0 auto; }
 
 .headerTop {
+  position: relative;
   padding-top: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,7 +415,8 @@ header {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .sec5Photo {
   display: -webkit-box;
@@ -430,7 +432,10 @@ header {
   padding-left: 20px; }
 
 .accordion-item__trigger {
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .sec5button {
   padding: 5px;
@@ -495,7 +500,7 @@ header {
   right: 40px; }
 
 .sec5Content {
-  max-height: 150px;
+  max-height: 130px;
   overflow-y: auto;
   border: 1px solid #e5e5e5;
   border-top: none;
@@ -870,6 +875,8 @@ footer {
     font-size: 120px; } }
 
 @media (max-width: 720px) {
+  .headerMid {
+    margin-top: 70px; }
   .sec2Items ul li {
     padding: 10px 0; }
     .sec2Items ul li span {
@@ -943,7 +950,10 @@ footer {
   .midCont .iPan img {
     width: 60%;
     margin: 0 auto; }
+  .sec5Wrapper {
+    width: 100%; }
   .sec5Mid .accordion {
+    width: 70%;
     padding: 0;
     padding-top: 10px; }
   .sec6Wrapper {
@@ -983,6 +993,14 @@ footer {
         font-size: 16px; }
       .sec6Wrapper .sec6Info .sec6InfoSign {
         font-size: 20px; }
+  .headerTop {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .menu-toggle {
+    display: block; }
+  .logo {
+    margin-left: 20px; }
   .nav ul li {
     display: none; }
   .botItems {

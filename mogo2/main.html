@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/assets/burger.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/accprdeon.css">
@@ -20,7 +21,19 @@
     <header>
         <div class="headerWrapper">
             <div class="headerTop">
-                <div class="logo"><span>MoGo</span></div>
+                <div class="logo"><span>MoGo</span>
+                    <div class="menu-toggle">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="cross">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
                 <nav class="nav">
                     <ul>
                         <li>About</li>
@@ -157,7 +170,7 @@
             </div>
             <div class="sec4Mid">
                 <div class="midCont">
-                    <div class="iPan"><img src="assest/img/ipad.png"  alt="">
+                    <div class="iPan"><img src="assest/img/ipad.png" alt="">
                         <div class="iPhone"><img src="assest/img/iphone.png" height="476" width="274" alt=""></div>
                     </div>
                 </div>
@@ -317,7 +330,6 @@
                 <div class="footerTopContent2">
                     <div class="secondContent">
                         <div class="secondContentTitle"><span>Blogs</span></div>
-                        
                         <div class="secondItem">
                             <div class="imgBlock"><img src="assest/img/footerItem1.png" height="79" width="119" alt=""></div>
                             <div class="secondItemTitle">Lorem ipsum dolor sit amet,
@@ -351,13 +363,12 @@
                         </div>
                     </div>
                 </div>
-
-
-                </div>
             </div>
+        </div>
         </div>
         <div class="footerBot"></div>
     </footer>
+    <script type="" src="scripts/burger.js"></script>
     <script type="" src="scripts/accordion.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="" src="scripts/spin.js"></script>
