@@ -19,9 +19,11 @@
 
 
 	document.querySelector('.menu-toggle').addEventListener('click', open)
-
+const menu = document.querySelector('.burgerMenu');
 function open () {
 		this.classList.toggle('active')
+		menu.classList.toggle('burgerOpen')
+
 }
 
 

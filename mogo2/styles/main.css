@@ -1005,5 +1005,10 @@ footer {
     display: none; }
   .botItems {
     display: none; }
-  #but1:before, #but2:before, #but3:before {
-    display: none; } }
+  #but1:before,
+  #but2:before,
+  #but3:before {
+    display: none; }
+  .headerMid .midSubtitle {
+    margin-top: 20px;
+    line-height: 72px; } }

@@ -34,8 +34,8 @@
 .hamburger span:after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   background-color: white;
   -webkit-transform: translateX(-200%);
   -ms-transform: translateX(-200%);
@@ -114,3 +114,70 @@
   -webkit-transform: translateY(-50%) rotate(-45deg) scaleX(1);
   -ms-transform: translateY(-50%) rotate(-45deg) scaleX(1);
   transform: translateY(-50%) rotate(-45deg) scaleX(1); }
+
+.burgerMenu {
+  -webkit-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  transform: translateX(-200%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.burgerOpen {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%); }
+  .burgerOpen .navBurger {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px); }
+
+.navBurger {
+  -webkit-transition: 1s cubic-bezier(0.1, 0.4, 0.65, 2.7);
+  -o-transition: 1s cubic-bezier(0.1, 0.4, 0.65, 2.7);
+  transition: 1s cubic-bezier(0.1, 0.4, 0.65, 2.7);
+  -webkit-transform: translateX(-150px);
+  -ms-transform: translateX(-150px);
+  transform: translateX(-150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .navBurger ul {
+    margin-top: 100px;
+    background: white;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .navBurger ul li {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px 50px;
+      color: #333333;
+      font-family: Montserrat;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .navBurger ul li:hover {
+      background: #000;
+      color: #ffd942; }
+  .navBurger li:first-child {
+    border-radius: 10px 10px 0px 0px; }
+  .navBurger li:last-child {
+    border-radius: 0px 0px 10px 10px; }
