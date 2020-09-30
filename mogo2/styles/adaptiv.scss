@@ -34,13 +34,18 @@
     .sec6Info{
         width: 100%; 
     }
+
     
 }
 
 /*768px*/
 @include mq('tablet'){
+    .sec5{
+        padding-bottom: 50px;    
+    }
     .sec6Wrapper{
         flex-direction:column;
+        width: 100%;
         .sec6Photo{
             width: 20%; 
             margin: 0 auto;
@@ -60,6 +65,9 @@
 
             
         }
+    }
+    .arrow,.arrowClose{
+        right: 20px;
     }
     .midSubtitle{
         

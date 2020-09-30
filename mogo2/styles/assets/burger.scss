@@ -1,3 +1,4 @@
+@import "../mixins.scss";
 .menu-toggle {
     margin: 0 auto;
     margin-top: 10px;   
@@ -103,6 +104,9 @@
     background:  rgba(0,0,0,.5);
     transition:0.5s;
     z-index: 20;    
+    display: flex;
+    justify-content:center;
+    align-items:center;
     .contact{
         position:  relative;
     }
@@ -126,27 +130,37 @@
     margin: 0 auto;
     margin-top: 10px;   
     display:  flex;
+
+    @include pushAuto;
+    
     
     span{
+        @include pushAuto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
         cursor: pointer;
-
         margin-right: 10px; 
-        
         border-radius:50%;
-        padding: 30px;     
+        width: 100px;
+        height: 100px;
         color: #fff;
         font-family: Montserrat;
         font-size: 10px;
         font-weight: 700;
         text-transform: uppercase;
     }
-    .fb{
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    .fbPopUp{
         background: #3b5998;
     }
-    .vk{
+    .vkPopUp{
         background:  #4d7198;
     }
-    .in{
+    .inPopUp{
         background: #eb2896;
     }
 }
@@ -155,8 +169,9 @@
     transform:translateX(-150px);
     display:flex;
     flex-direction:column;
-    width: 100%;    
+    width: 60%;    
     justify-content:center;
+
     position:  relative;
     z-index: 20;
     ul{
@@ -167,7 +182,7 @@
         flex-direction:column;
         align-items:center;
         li{
-
+            cursor: pointer;
             width: 100%;    
             margin: 0 auto;
             text-align: center;

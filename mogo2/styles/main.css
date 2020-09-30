@@ -803,9 +803,6 @@ footer {
   display: flex;
   width: 30%; }
 
-.footerWrapper:nth-child(2) {
-  display: none; }
-
 .secondContent {
   display: -webkit-box;
   display: -ms-flexbox;
