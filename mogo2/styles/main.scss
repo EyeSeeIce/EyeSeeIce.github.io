@@ -1,10 +1,12 @@
+@import "mixins.scss";
 * {
     box-sizing: border-box;
 }
 
 
-header {
 
+header {
+	
     max-width: 100vw;
     background: url('../assest/img/1layer.png') no-repeat;
     background-size: cover;
@@ -78,6 +80,8 @@ header {
 .headerMid {
     margin-top: 160px;
     text-align: center;
+    
+
 
     .midTitle {
 
@@ -227,7 +231,7 @@ header {
         margin-bottom: 45px;
         content: '';
         display: block;
-        width: 24%;
+        width: 54px;
         height: 2px;
         background: red;
     }
@@ -260,7 +264,7 @@ header {
 .item2,
 .item3 {
     display: flex;
-    width: 25%;
+    width: 50%;
     position: relative;
     margin-top: 10px;
     margin-left: 15px;
@@ -304,6 +308,10 @@ header {
         justify-content: center;
 
         li {
+        	span{
+        		padding-left: 3px;
+        		padding-right: 3px;	
+        	}
             text-align: center;
             padding: 80px 0;
             color: #ffffff;
@@ -317,6 +325,7 @@ header {
             border: 1px solid white;
             border-top: none;
             border-bottom: none;
+            
 
             .num {
                 margin-bottom: 18px;
@@ -367,7 +376,7 @@ header {
             justify-content: flex-end;
             margin: 0 auto;
             width: 100%;
-            min-width: 200px;
+            
             max-width: 260px;
 
         }
@@ -461,7 +470,6 @@ header {
     position: relative;
 
     img {
-
         width: 100%;
         height: auto;
     }
@@ -469,8 +477,6 @@ header {
 
 .iPhone {
     display: inline-flex;
-
-
     position: absolute;
     bottom: -100px;
     right: -100px;
@@ -505,14 +511,12 @@ header {
     display: flex;
     padding-top: 20px;
     justify-content: center;
-    align-items: center;
     position: relative;
 
 }
 
 .sec5Photo {
-    display: flex;
-
+    
     width: 60%;
 
     img {
@@ -634,7 +638,7 @@ header {
 }
 
 .sec6Photo {
-    display: flex;
+
     
     position: relative;
 
@@ -875,7 +879,12 @@ footer {
 .followUs {
     display: flex;
     margin-bottom: 35px;
+    
 
+
+}
+.followUsLink{
+	display: flex;
 
 }
 
@@ -885,14 +894,18 @@ footer {
     font-weight: 400;
     line-height: 24px;
     display: flex;
+    
 }
 
 .fb {
     margin-left: 10px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
 
+
+
     img {
+    	
         width: 12px;
         height: 15px;
 
@@ -938,6 +951,9 @@ footer {
     width: 30%;
 
 }
+.footerWrapper:nth-child(2){
+        display: none;
+    }
 
 .secondContent {
     display: flex;
@@ -998,317 +1014,3 @@ footer {
     padding: 2px;
 }
 
-@media (max-width: 850px) {
-    .sec3Mid {
-        .top {
-            ul {
-
-                flex-direction: column;
-
-
-            }
-        }
-
-        .bot {
-            display: none;
-        }
-    }
-
-    .sec2Items {
-        ul {
-            li {
-                padding: 30px 0;
-
-                span {
-                    font-size: 14px;
-                }
-
-                .num {
-                    font-size: 52px;
-                }
-            }
-        }
-    }
-
-    .headerMid {
-        .midSubtitle {
-            font-size: 120px;
-        }
-    }
-}
-
-@media (max-width: 720px) {
-    .headerMid {
-        margin-top: 70px;
-    }
-    .sec6Photo {
-
-    width: 50%;
-    position: relative;
-
-    img {
-        position: absolute;
-        width: 100%;
-        height: auto;
-
-    }
-}
-
-
-    .sec2Items {
-        ul {
-            li {
-                padding: 10px 0;
-
-                span {
-                    font-size: 10px;
-                }
-
-                .num {
-                    font-size: 28px;
-                }
-            }
-        }
-    }
-
-    .headerMid {
-        .midTitle {
-            font-size: 52px
-        }
-
-        .counter {
-            .num {
-                font-size: 52px;
-            }
-        }
-
-        .midSubtitle {
-            font-size: 70px;
-        }
-
-        .midTitle {
-            font-size: 32px
-        }
-    }
-
-    .sec5Mid {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 730px) {
-    .midCont {
-        width: 60%;
-    }
-
-    .mans {
-        flex-direction: column;
-
-        align-items: center;
-    }
-
-
-
-
-}
-
-@media (max-width: 680px) {
-    .iPhone {
-        display: none;
-    }
-
-    .sec4 {
-        margin-bottom: 0px;
-    }
-
-    .arrow,
-    .arrowClose {
-        display: none;
-    }
-
-    .sec6Wrapper {
-        width: 90%;
-    }
-
-    .sec8MidItems {
-        flex-direction: column;
-
-
-    }
-
-}
-
-@media (max-width: 1000px) {
-    .footerWrapper {
-        flex-direction: column;
-    }
-
-    .footerTopContent,
-    .footerTopContent2,
-    .footerTopContent3 {
-        width: 100%;
-    }
-
-    .footerTopContent2 {
-        width: 40%;
-
-        .accordion-item--active {
-            display: block;
-        }
-
-    }
-
-    .footerTopContent3 {
-        width: 100%;
-
-    }
-
-}
-
-@media (max-width: 721px) {
-    .headerMid {
-        .midSubtitle {
-            font-size: 40px;
-
-        }
-
-        .midTitle {
-            font-size: 22px
-        }
-    }
-
-    .midCont {
-
-        .iPan {
-
-            img {
-                width: 60%;
-                margin: 0 auto;
-            }
-        }
-
-    }
-
-    .sec5Wrapper {
-        width: 100%;
-
-    }
-
-    .sec5Mid {
-
-        .accordion {
-            width: 70%;
-            padding: 0;
-            padding-top: 10px;
-
-        }
-    }
-
-    .sec6Wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-        img {
-            width: 40%;
-            margin: 0 auto;
-            position: relative;
-        }
-    }
-}
-
-@media (max-width: 425px) {
-    .sec6Wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-
-        .sec6Info {
-            width: 100%;
-            font-size: 12px;
-
-            .sec6InfoTitle {
-                font-size: 16px;
-            }
-
-            .sec6InfoSign {
-                font-size: 20px;
-            }
-
-        }
-
-    }
-
-    .headerTop {
-        justify-content: center;
-
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .logo {
-        margin-left: 20px;
-
-    }
-
-
-    .nav {
-        ul {
-            li {
-                display: none;
-            }
-        }
-    }
-
-    .botItems {
-        display: none;
-    }
-
-    #but1:before,
-    #but2:before,
-    #but3:before {
-        display: none;
-    }
-        
-        .headerMid{
-        .midSubtitle{
-        margin-top: 20px;
-        line-height: 72px;
-        }
-    }
-    .sec3{
-        .sec3Wrapper{width: 100%;   }
-        .sec3Mid{
-            width: 100%;    
-            .top{
-                width: 100%;    
-                
-                ul{
-                    
-                    li{
-                        
-                        .item{
-                        
-                            width: 100%;    
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .sec6Wrapper{
-        .sec6Info{
-            padding-left: 0px;
-        }
-    }
-    .man{
-        width: 90%;
-    }
-
-
-}

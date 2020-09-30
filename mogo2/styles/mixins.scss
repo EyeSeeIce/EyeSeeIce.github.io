@@ -1,0 +1,42 @@
+/*Переменные*/
+$mainColor: red;
+/*$secondCOlor: ;*/
+
+
+
+/*Центрирование эллемента*/
+@mixin pushAuto {
+  margin: {
+   left: auto;
+   right: auto;
+  }
+}
+/*Бордер*/
+@mixin br {
+	border:1px solid black;
+}
+
+/*Медизапросы*/
+
+$breakpoints: (
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      550px,
+  "tablet-small": 640px,
+  "tablet":       868px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "desktop-wide": 1440px
+);
+@mixin mq($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+   $width: map_get($breakpoints, $width);
+   @if $type == min {
+    $width: $width - 1px;
+   }
+   @media only screen and (#{$type}-width: $width) {
+    @content;
+   }
+  }
+}
+

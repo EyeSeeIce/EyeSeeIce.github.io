@@ -1,0 +1,384 @@
+@import "mixins.scss";
+
+/*1248px*/
+@include mq('desktop'){
+        .sec2Items{
+        ul{
+            li{
+                padding: 30px 0;
+            }
+        }
+    }
+}
+
+/*1024px*/
+@include mq('tablet-wide'){
+    .midTitle{
+        span{
+            font-size: 54px
+        }
+    }
+    .midSubtitle{
+        span{
+            font-size: 120px;
+
+        }
+    }
+    .sec2Items{
+        ul{
+            li{
+                padding: 20px 0;
+            }
+        }
+    }
+    .sec6Info{
+        width: 100%; 
+    }
+    
+}
+
+/*768px*/
+@include mq('tablet'){
+    .sec6Wrapper{
+        flex-direction:column;
+        .sec6Photo{
+            width: 20%; 
+            margin: 0 auto;
+        }
+
+    }
+    .sec6InfoTitle{
+        font-size:18px;
+    }
+    .headerMid{
+        margin-top:  60px;
+    }
+    .midTitle{
+        
+        span{
+            font-size: 34px;
+
+            
+        }
+    }
+    .midSubtitle{
+        
+
+        span{
+            
+            font-size: 90px;
+            line-height: 10px;
+
+
+        }
+    }
+    .sec2Items{
+        ul{
+            li{
+                padding: 10px 0;
+                font-size: 12px;
+                .num{
+                    font-size: 42px;
+                    margin-bottom: 5px;
+                }
+
+            }
+        }
+    }
+
+    .midCont{
+            
+        .iPan{
+
+            
+                img{
+                    width: 80%;    
+                }
+        }
+        .iPhone{
+
+            
+            right: -40px;
+            img{
+
+                    width: 80%;
+
+                }
+        }
+
+    }
+    .sec5Mid{
+            align-items:center;
+            flex-direction:column;
+            .sec5Photo{
+                width: 90%;    
+            }
+            .accordion{
+                padding-left: 0;    
+                margin-top: 10px;   
+                width: 100%;    
+            }
+        }
+        .secTitle{
+            margin-top: 50px;   
+        }
+
+
+    .footerWrapper{
+        flex-wrap:wrap;
+        .footerTopContent3{
+            width: 50%;    
+            margin-left: 0; 
+        }
+    }
+    .sec1 {
+    .sec1Items {
+        align-items: center;
+        flex-direction: column;
+        .item1,
+        .item2,
+        .item3{
+            width: 80%;    
+        }
+        }
+    }
+    .mans{
+        align-items:center;
+        flex-direction:column;
+        
+        .man{
+            margin-left: 0; 
+            margin-right: 0;
+            width: 100%;    
+        }
+    }
+}
+
+@include mq('tablet-small'){
+    .sec8MidItems{
+        flex-direction:column;
+    }
+    .headerMid{
+        margin-top:  60px;
+    }
+    .midTitle{
+        
+        span{
+            font-size: 34px;
+
+            
+        }
+    }
+    .midSubtitle{
+        span{
+                
+            font-size: 54px;
+            line-height: 10px;
+
+
+        }
+    }
+    .sec2Items{
+
+        ul{
+            li{
+                padding: 10px 0;
+                font-size: 8px;
+                .num{
+                    font-size: 22px;
+
+                }
+
+            }
+        }
+    }
+    .sec4{
+        .sec4Wrapper{
+                .midCont{
+                    
+                    width: 90%; 
+                    .iPan{
+                        
+                    }
+                    .iPhone{
+                        width: 40%; 
+                        
+                        right: 50px;
+                        img{
+                            width: 100%;    
+                        }
+                    }
+                }
+        }
+    }
+    .footerWrapper{
+        margin: 0;
+        flex-wrap:wrap;
+        .footerTopContent3{
+            width: 80%;    
+            margin-left: 0; 
+        }
+    }
+    
+    
+
+
+}    
+
+/*550px*/
+@include mq('phablet'){
+
+    .midTitle{
+        
+
+    }
+    .midSubtitle{
+        
+
+        
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        
+        span{
+            margin-top: 20px;   
+            font-size:  50px;
+            line-height: 60px;
+
+        }
+    }
+    .top{
+        ul{
+            flex-direction:column;
+            li{
+
+                max-width:none;
+            }
+        }
+        
+    }
+    .bot{
+        display: none;
+    }
+
+
+    .footerWrapper{
+        margin: 0;
+        flex-wrap:wrap;
+        flex-direction:column;
+        align-items:center;
+
+        .footerTopContent2{
+            display: none;
+        }
+        .followUs{
+            flex-direction:column;
+        }
+        .followUsLink{
+            
+
+                .followUs{
+                            
+                }
+                .fb:first-child{
+                    margin-left:0;
+                    
+
+                }
+
+            }
+        .footerTopContent3{
+            width: 80%;    
+            margin-left: 0; 
+        }
+    }
+    .headerWrapper{
+        .headerTop{
+            justify-content:center;
+            
+            .nav{
+                display: none;
+            }
+            .logo{
+                .menu-toggle{
+                    display: block;
+                }
+            }
+        }
+        .headerBot{
+            display: none;
+        }
+        .headerMid{
+            padding-bottom: 20px;   
+        }
+    }
+
+}
+
+/*480px*/
+@include mq('phone-wide'){
+    .midCont{
+            
+
+        .iPan{
+                justify-content:center;
+
+                img{
+                    width: 80%;    
+                }
+        }
+        .iPhone{
+
+            
+            
+            
+            bottom:-70px;
+
+            img{
+
+                    
+
+                }
+        }
+    }
+      .footerWrapper{
+            width: 90%; 
+
+        .footerTopContent{
+            margin-right: 0;    
+            width: 100%;    
+        }
+        .contentTitle{
+            font-size:14px;
+        }
+        .followUs{
+            flex-direction:column;
+        }
+        .followUsLink{
+            
+
+                .followUs{
+                            
+                }
+                .fb:first-child{
+                    margin-left:0;
+                    
+
+                }
+
+            }
+        .footerTopContent3{
+            width: 100%;    
+            margin-left: 0; 
+        }
+    }
+
+    
+}
+/*400px*/
+@include mq('phone'){
+    
+}
+
+

@@ -1,3 +1,9 @@
+@charset "UTF-8";
+/*Переменные*/
+/*$secondCOlor: ;*/
+/*Центрирование эллемента*/
+/*Бордер*/
+/*Медизапросы*/
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -191,7 +197,7 @@ header {
     margin-bottom: 45px;
     content: '';
     display: block;
-    width: 24%;
+    width: 54px;
     height: 2px;
     background: red; }
 
@@ -224,7 +230,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25%;
+  width: 50%;
   position: relative;
   margin-top: 10px;
   margin-left: 15px; }
@@ -275,6 +281,9 @@ header {
       border: 1px solid white;
       border-top: none;
       border-bottom: none; }
+      .sec2Items ul li span {
+        padding-left: 3px;
+        padding-right: 3px; }
       .sec2Items ul li .num {
         margin-bottom: 18px;
         font-size: 72px;
@@ -319,7 +328,6 @@ header {
     justify-content: flex-end;
     margin: 0 auto;
     width: 100%;
-    min-width: 200px;
     max-width: 260px; }
 
 .top {
@@ -417,15 +425,9 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   position: relative; }
 
 .sec5Photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 60%; }
   .sec5Photo img {
     width: 100%;
@@ -530,9 +532,6 @@ header {
   display: flex; }
 
 .sec6Photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative; }
   .sec6Photo img {
     width: 100%;
@@ -749,6 +748,11 @@ footer {
   display: flex;
   margin-bottom: 35px; }
 
+.followUsLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .foll {
   font-family: "Roboto";
   font-size: 15px;
@@ -760,9 +764,9 @@ footer {
 
 .fb {
   margin-left: 10px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -798,6 +802,9 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 30%; }
+
+.footerWrapper:nth-child(2) {
+  display: none; }
 
 .secondContent {
   display: -webkit-box;
@@ -858,178 +865,3 @@ footer {
 
 .imgBlock {
   padding: 2px; }
-
-@media (max-width: 850px) {
-  .sec3Mid .top ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .sec3Mid .bot {
-    display: none; }
-  .sec2Items ul li {
-    padding: 30px 0; }
-    .sec2Items ul li span {
-      font-size: 14px; }
-    .sec2Items ul li .num {
-      font-size: 52px; }
-  .headerMid .midSubtitle {
-    font-size: 120px; } }
-
-@media (max-width: 720px) {
-  .headerMid {
-    margin-top: 70px; }
-  .sec6Photo {
-    width: 50%;
-    position: relative; }
-    .sec6Photo img {
-      position: absolute;
-      width: 100%;
-      height: auto; }
-  .sec2Items ul li {
-    padding: 10px 0; }
-    .sec2Items ul li span {
-      font-size: 10px; }
-    .sec2Items ul li .num {
-      font-size: 28px; }
-  .headerMid .midTitle {
-    font-size: 52px; }
-  .headerMid .counter .num {
-    font-size: 52px; }
-  .headerMid .midSubtitle {
-    font-size: 70px; }
-  .headerMid .midTitle {
-    font-size: 32px; }
-  .sec5Mid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; } }
-
-@media (max-width: 730px) {
-  .midCont {
-    width: 60%; }
-  .mans {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; } }
-
-@media (max-width: 680px) {
-  .iPhone {
-    display: none; }
-  .sec4 {
-    margin-bottom: 0px; }
-  .arrow,
-  .arrowClose {
-    display: none; }
-  .sec6Wrapper {
-    width: 90%; }
-  .sec8MidItems {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; } }
-
-@media (max-width: 1000px) {
-  .footerWrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .footerTopContent,
-  .footerTopContent2,
-  .footerTopContent3 {
-    width: 100%; }
-  .footerTopContent2 {
-    width: 40%; }
-    .footerTopContent2 .accordion-item--active {
-      display: block; }
-  .footerTopContent3 {
-    width: 100%; } }
-
-@media (max-width: 721px) {
-  .headerMid .midSubtitle {
-    font-size: 40px; }
-  .headerMid .midTitle {
-    font-size: 22px; }
-  .midCont .iPan img {
-    width: 60%;
-    margin: 0 auto; }
-  .sec5Wrapper {
-    width: 100%; }
-  .sec5Mid .accordion {
-    width: 70%;
-    padding: 0;
-    padding-top: 10px; }
-  .sec6Wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%; }
-    .sec6Wrapper img {
-      width: 40%;
-      margin: 0 auto;
-      position: relative; } }
-
-@media (max-width: 425px) {
-  .sec6Wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%; }
-    .sec6Wrapper .sec6Info {
-      width: 100%;
-      font-size: 12px; }
-      .sec6Wrapper .sec6Info .sec6InfoTitle {
-        font-size: 16px; }
-      .sec6Wrapper .sec6Info .sec6InfoSign {
-        font-size: 20px; }
-  .headerTop {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .menu-toggle {
-    display: block; }
-  .logo {
-    margin-left: 20px; }
-  .nav ul li {
-    display: none; }
-  .botItems {
-    display: none; }
-  #but1:before,
-  #but2:before,
-  #but3:before {
-    display: none; }
-  .headerMid .midSubtitle {
-    margin-top: 20px;
-    line-height: 72px; }
-  .sec3 .sec3Wrapper {
-    width: 100%; }
-  .sec3 .sec3Mid {
-    width: 100%; }
-    .sec3 .sec3Mid .top {
-      width: 100%; }
-      .sec3 .sec3Mid .top ul li .item {
-        width: 100%; }
-  .sec6Wrapper .sec6Info {
-    padding-left: 0px; }
-  .man {
-    width: 90%; } }
