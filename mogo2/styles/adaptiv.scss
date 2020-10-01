@@ -40,6 +40,12 @@
 
 /*768px*/
 @include mq('tablet'){
+    .upper{
+        display: !important none;    
+    }
+    .showUpper{
+        display: none;
+    }
     .sec5{
         padding-bottom: 50px;    
     }
@@ -82,9 +88,15 @@
     }
     .sec2Items{
         ul{
+
+
+            
+            padding: 0;
             li{
-                padding: 10px 0;
+                
                 font-size: 12px;
+               
+
                 .num{
                     font-size: 42px;
                     margin-bottom: 5px;
@@ -163,6 +175,9 @@
 }
 
 @include mq('tablet-small'){
+    .botItems{
+        display:  none;
+    }
     .sec8MidItems{
         flex-direction:column;
     }
@@ -186,20 +201,33 @@
 
         }
     }
-    .sec2Items{
-
+            .sec2Items{
         ul{
+
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            
             li{
-                padding: 10px 0;
-                font-size: 8px;
+                padding: 20px;
+                width: 100%;
+                font-size: 16px;
+                border: 1px solid white;
+                border-left: none;
+                border-right: none;
+
+
                 .num{
-                    font-size: 22px;
+                    font-size: 52px;
 
                 }
 
             }
         }
     }
+
+
+        
     .sec4{
         .sec4Wrapper{
                 .midCont{
@@ -219,10 +247,22 @@
                 }
         }
     }
+    .subsribe {
+    form{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    }
+    .btn{
+        margin-left: 0;
+    }
+}
     .footerWrapper{
         margin: 0;
         flex-wrap:wrap;
         .footerTopContent3{
+            margin-top: 10px;
             width: 80%;    
             margin-left: 0; 
         }
@@ -235,7 +275,14 @@
 
 /*550px*/
 @include mq('phablet'){
-
+    
+            .secTitle{
+                font-size:22px;
+            }
+            .secSubtitle{
+                font-size:15px;
+            }
+    
     .midTitle{
         
 
@@ -314,8 +361,12 @@
                 }
             }
         }
+        .midBtn:before{
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
         .headerBot{
-            display: none;
+            
         }
         .headerMid{
             padding-bottom: 20px;   
@@ -386,7 +437,18 @@
 }
 /*400px*/
 @include mq('phone'){
-    
+    .footerWrapper{
+        margin: 0;
+        flex-wrap:wrap;
+        .footerTopContent3{
+            
+            width: 100%;    
+            
+        }
+    }    
+    header{
+
+    }
 }
 
 

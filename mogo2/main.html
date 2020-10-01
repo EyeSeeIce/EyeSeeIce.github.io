@@ -16,23 +16,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91968f511b.js" crossorigin="anonymous"></script>
     <title>MoGo</title>
 </head>
 
+
 <body>
-    <div class="burgerMenu">
+    <div class="upper"> 
+        <i class="fas fa-arrow-circle-up"></i>
+    </div>  
+    <div class="burgerMenu ">
         <nav class="navBurger">
             <ul>
-                <li>About</li>
-                <li>Servise</li>
-                <li>Work</li>
-                <li>blog</li>
-                <li class="contact">contacts</li>
+                <li><a href="#about" class="" id="">О нас</a></li>
+                <li><a href="#service" class="" id="">Наш сервис</a></li>
+                <li><a href="#work" class="" id="">Работы</a></li>
+                <li><a href="#blog" class="" id="">Блог</a></li>
+                <li class="contact"></li>
             </ul>
             <div class="social">
                 <span class="fbPopUp"><img src="assest/img/facebook.png" height="16" width="16" alt=""></span>
                 <span class="vkPopUp"><img src="assest/img/twitter.png" height="14" width="16" alt=""></span>
-                <span class="inPopUp"><img src="assest/img/instagram.png" height="16" width="16" alt=""></span> 
+                <span class="inPopUp"><img src="assest/img/instagram.png" height="16" width="16" alt=""></span>
             </div>
     </div>
     <header>
@@ -52,29 +58,29 @@
                     </div>
                 </div>
                 <nav class="nav">
-                    <ul>
-                        <li>About</li>
-                        <li>Servise</li>
-                        <li>Work</li>
-                        <li>blog</li>
-                        <li>Contact</li>
-                    </ul>
-                    <div class="cart"></div>
-                    <div class="search"></div>
+                    <div class="navWrapper">
+                        <ul>
+                            <li><a href="#about" class="" id="">О нас</a></li>
+                            <li><a href="#service" class="" id="">Наш сервис</a></li>
+                            <li><a href="#work" class="" id="">Работы</a></li>
+                            <li><a href="#blog" class="" id="">Блог</a></li>
+                        </ul>
+                    </div>
+                        
                 </nav>
             </div>
             <div class="headerMid">
                 <div class="midTitle"><span>Creative Template</span></div>
                 <div class="midSubtitle"><span>Welcome to MoGo</span></div>
-                <div class="midBtn"><span>Learn more</span></div>
+                <div class="midBtn"><span>Узнать больше</span></div>
             </div>
             <div class="headerBot">
                 <div class="botItems">
                     <ul>
-                        <li><span>01</span>intro</li>
-                        <li><span>02</span>work</li>
-                        <li><span>03</span>about</li>
-                        <li><span>04</span>contacts</li>
+                        <li><span>01</span>Интро</li>
+                        <li><span>02</span>Работы</li>
+                        <li><span>03</span>О нас</li>
+                        <li><span>04</span>Контакты</li>
                     </ul>
                 </div>
             </div>
@@ -83,9 +89,9 @@
     <section class="sec1">
         <div class="sec1Wrapper">
             <div class="secTop">
-                <div class="secTitle"><span>What we do</span></div>
-                <div class="secSubtitle">story about us</div>
-                <div class="secArticle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                <div class="secTitle" id="about"><span>Что мы делаем</span></div>
+                <div class="secSubtitle">История про нас</div>
+                <div class="secArticle">Компания MoGo уже на протяжении 10 лет занимается созданием и продвижением личных брендов.</div>
             </div>
             <div class="sec1Midle">
                 <div class="sec1Items">
@@ -101,24 +107,24 @@
             <div class="sec2Items">
                 <ul>
                     <li id="counter">
-                        <span data-num="52" class="num">0</span>
-                        <span>Web Design Projects</span>
+                        <span data-num="" class="num"><span class="nu">110</span></span>
+                        <span>Выпущено проектов</span>
                     </li>
                     <li>
-                        <span data-num="123" class="num">0</span>
-                        <span>happy client</span>
+                        <span data-num="" class="num"><span class="nu">123</span></span>
+                        <span>Довольных клиентов</span>
                     </li>
                     <li>
-                        <span data-num="15" class="num">0</span>
-                        <span>award winner</span>
+                        <span data-num="" class="num"><span class="nu">15</span></span>
+                        <span>Количество награл</span>
                     </li>
                     <li>
-                        <span data-num="99" class="num">0</span>
-                        <span>cup of coffee</span>
+                        <span data-num="" class="num"><span class="nu">99</span></span>
+                        <span>Выпито чашек кофе :)</span>
                     </li>
                     <li>
-                        <span data-num="24" class="num">0</span>
-                        <span>members</span>
+                        <span data-num="" class="num"><span class="nu">24</span></span>
+                        <span>Сотрудников</span>
                     </li>
                 </ul>
             </div>
@@ -127,28 +133,28 @@
     <section class="sec3">
         <div class="sec3Wrapper">
             <div class="secTop">
-                <div class="secTitle">We work with</div>
-                <div class="secSubtitle">Amazing Services</div>
+                <div class="secTitle" id="service">Мы работаем с</div>
+                <div class="secSubtitle">разными сервисами</div>
             </div>
             <div class="sec3Mid">
                 <div class="top">
                     <ul>
                         <li>
-                            <div class="item">
-                                <div class="itemTitle"><span>Photography</span></div>
-                                <div class="itemSubtitle"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span></div>
+                            <div class="item" id="item1">
+                                <div class="itemTitle"><span>Фотографии</span></div>
+                                <div class="itemSubtitle"><span>Качественная обработка фотографий для размещения в блоге, социальных сетях и на любых других площадках.</span></div>
                             </div>
                         </li>
                         <li>
-                            <div class="item">
-                                <div class="itemTitle"><span>Photography</span></div>
-                                <div class="itemSubtitle"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span></div>
+                            <div class="item" id="item2">
+                                <div class="itemTitle"><span>Веб-дизайн</span></div>
+                                <div class="itemSubtitle"><span>Разработка дизайн-макета по Вашему желанию, над проектом будут работать лучшие специалисты </span></div>
                             </div>
                         </li>
                         <li>
-                            <div class="item">
-                                <div class="itemTitle"><span>Photography</span></div>
-                                <div class="itemSubtitle"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span></div>
+                            <div class="item" id="item3">
+                                <div class="itemTitle"><span>Копирайтинг</span></div>
+                                <div class="itemSubtitle"><span>Нужен продающий текст? Обращайтесь в MoGo и ваши продажи выростут на 200%</span></div>
                             </div>
                         </li>
                     </ul>
@@ -156,21 +162,21 @@
                 <div class="bot">
                     <ul>
                         <li>
-                            <div class="item">
-                                <div class="itemTitle"><span>Photography</span></div>
-                                <div class="itemSubtitle"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span></div>
+                            <div class="item" id="item4">
+                                <div class="itemTitle"><span>СЕО</span></div>
+                                <div class="itemSubtitle"><span>Проведем все необходимые СЕО манипуляции для выдвижения вашего сайта в топы поиска</span></div>
                             </div>
                         </li>
                         <li>
-                            <div class="item">
-                                <div class="itemTitle"><span>Photography</span></div>
-                                <div class="itemSubtitle"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span></div>
+                            <div class="item" id="item5">
+                                <div class="itemTitle"><span>Верстка</span></div>
+                                <div class="itemSubtitle"><span>Наши лучшие специалисты перенесут ваш макет в HTML и CSS (они делают реальную магию)</span></div>
                             </div>
                         </li>
                         <li>
-                            <div class="item">
-                                <div class="itemTitle"><span>Photography</span></div>
-                                <div class="itemSubtitle"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span></div>
+                            <div class="item" id="item6">
+                                <div class="itemTitle"><span>Диджитал</span></div>
+                                <div class="itemSubtitle"><span>Все самые современные технологии будут применены на вашем проекте. Соседи обзавидуются, а ваша крутость выростет</span></div>
                             </div>
                         </li>
                     </ul>
@@ -181,8 +187,8 @@
     <section class="sec4">
         <div class="sec4Wrapper">
             <div class="secTop">
-                <div class="secTitle">For all devices</div>
-                <div class="secSubtitle">Unique design</div>
+                <div class="secTitle">Для каждого устройства</div>
+                <div class="secSubtitle">уникальный дизайн</div>
             </div>
             <div class="sec4Mid">
                 <div class="midCont">
@@ -196,16 +202,16 @@
     <section class="sec5">
         <div class="sec5Wrapper">
             <div class="secTop">
-                <div class="secTitle">Service</div>
-                <div class="secSubtitle">what we do</div>
-                <div class="secArticle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                <div class="secTitle" id="work">Услуги</div>
+                <div class="secSubtitle">Что именно мы делаем</div>
+                <div class="secArticle">Тут вы можете ознакомится со списком услуг, которые мы предоставляем. </div>
             </div>
             <div class="sec5Mid">
                 <div class="sec5Photo"><img src="assest/img/sec5img.png" height="380" width="570" alt=""></div>
                 <div class="accordion">
                     <div class="accordion-item">
                         <div class="accordion-item__trigger">
-                            <div class="sec5button" id="but1"><span>Photography</span>
+                            <div class="sec5button" id="but1"><span>Фотографии</span>
                                 <div class="arrow"></div>
                             </div>
                         </div>
@@ -217,7 +223,7 @@
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-item__trigger">
-                            <div class="sec5button" id="but2"><span>creativity</span>
+                            <div class="sec5button" id="but2"><span>Копирайтинг</span>
                                 <div class="arrow"></div>
                             </div>
                         </div>
@@ -229,7 +235,7 @@
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-item__trigger">
-                            <div class="sec5button" id="but3"><span>web design</span>
+                            <div class="sec5button" id="but3"><span>веб-дизайн</span>
                                 <div class="arrow"></div>
                             </div>
                         </div>
@@ -255,8 +261,8 @@
     <section class="sec7">
         <div class="sec7Wrapper">
             <div class="secTop">
-                <div class="secTitle">Who we are</div>
-                <div class="secSubtitle">Meet our team</div>
+                <div class="secTitle">Кто мы?</div>
+                <div class="secSubtitle">Познакомтесь с нашей командой</div>
                 <div class="secArticle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
             </div>
             <div class="sec7Mid">
@@ -264,17 +270,17 @@
                     <div class="man1 man">
                         <div class="manPhoto"><img src="assest/img/man2.png" alt=""></div>
                         <span class="name">Matthew Dix</span>
-                        <span class="work">Graphic Design</span>
+                        <span class="work">Графический дизайнер</span>
                     </div>
                     <div class="man2 man">
                         <div class="manPhoto"><img src="assest/img/man1.png" alt=""></div>
-                        <span class="name">Matthew Dix</span>
-                        <span class="work">Graphic Design</span>
+                        <span class="name">Christopher Campbell</span>
+                        <span class="work">Бренд-менеджер/графический дизайнер</span>
                     </div>
                     <div class="man3 man">
                         <div class="manPhoto"><img src="assest/img/man3.png" alt=""></div>
-                        <span class="name">Matthew Dix</span>
-                        <span class="work">Graphic Design</span>
+                        <span class="name">Michael Fertig </span>
+                        <span class="work">Разработчик</span>
                     </div>
                 </div>
             </div>
@@ -292,8 +298,8 @@
     <section class="sec8">
         <div class="sec8Wrapper">
             <div class="secTop">
-                <div class="secTitle">Our stories</div>
-                <div class="secSubtitle">Latest blog</div>
+                <div class="secTitle" id="blog">Наши мероприятия</div>
+                <div class="secSubtitle">Последние новости</div>
             </div>
             <div class="sec8Mid">
                 <div class="sec8MidItems">
@@ -323,9 +329,9 @@
                     <div class="contentLogo"><span>MoGo</span></div>
                     <div class="contentTitle"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span></div>
-                    <div class="contentFollowers"><span><span class="follow">15k</span> followers</span></div>
+                    <div class="contentFollowers"><span><span class="follow">15k</span> уже подписались</span></div>
                     <div class="followUs">
-                        <div class="foll"><span>Follow Us</span>
+                        <div class="foll"><span>Подпишись и ты!</span>
                         </div>
                         <div class="followUsLink">
                             <div class="fb"><img src="assest/img/facebook.png" height="26" width="12" alt=""></div>
@@ -341,7 +347,7 @@
                     <div class="subsribe">
                         <form action="#">
                             <input class="email" type="email">
-                            <input class="btn" type="submit" name="" value="subscribe">
+                            <input class="btn" type="submit" name="" value="Подписаться">
                         </form>
                     </div>
                 </div>
@@ -386,10 +392,12 @@
         </div>
         <div class="footerBot"></div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="" src="scripts/burger.js"></script>
     <script type="" src="scripts/accordion.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="" src="scripts/spin.js"></script>
+    <script src="scripts/jquery.spincrement.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

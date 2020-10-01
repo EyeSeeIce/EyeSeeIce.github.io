@@ -147,6 +147,12 @@
   .burgerMenu .contact {
     position: relative; }
 
+.bodyLock {
+  padding-right: 3px; }
+
+.bodyOverflow {
+  overflow: hidden; }
+
 .burgerOpen {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
@@ -165,17 +171,20 @@
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
-  -webkit-transform: translateY(2000px);
-  -ms-transform: translateY(2000px);
-  transform: translateY(2000px);
   margin: 0 auto;
-  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto; }
   .social span {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
     margin-left: auto;
     margin-right: auto;
     display: -webkit-box;
@@ -190,8 +199,7 @@
     cursor: pointer;
     margin-right: 10px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    padding: 20px;
     color: #fff;
     font-family: Montserrat;
     font-size: 10px;
@@ -264,3 +272,6 @@
   -webkit-transform: translateY(10px);
   -ms-transform: translateY(10px);
   transform: translateY(10px); }
+  .socialOpen span {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg); }

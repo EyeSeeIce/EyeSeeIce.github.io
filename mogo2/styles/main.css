@@ -25,13 +25,17 @@ header {
   display: -ms-flexbox;
   display: flex;
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .headerTop .logo {
+    padding-left: 10px; }
   .headerTop .nav {
+    position: relative;
+    padding: 10px 0px;
     display: block;
     font-size: 14px;
     font-weight: 400;
@@ -47,9 +51,12 @@ header {
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
+        .headerTop .nav ul li a {
+          color: #ffffff;
+          font-weight: 700; }
       .headerTop .nav ul li::lastchild {
         margin-right: none; }
-    .headerTop .nav li:after {
+    .headerTop .nav a:after {
       margin-top: 8px;
       content: '';
       display: -webkit-box;
@@ -57,13 +64,13 @@ header {
       display: flex;
       width: 100%;
       height: 3px;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
-    .headerTop .nav li:hover:after {
-      -webkit-box-shadow: inset 56px 0px 0px 0px #fce38a;
-      box-shadow: inset 56px 0px 0px 0px #fce38a; }
-    .headerTop .nav li:hover {
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    .headerTop .nav a:hover:after {
+      -webkit-box-shadow: inset 96px 0px 0px 0px #fce38a;
+      box-shadow: inset 96px 0px 0px 0px #fce38a; }
+    .headerTop .nav a:hover {
       color: #fce38a; }
 
 .headerMid {
@@ -127,15 +134,14 @@ header {
       -ms-flex-pack: justify;
       justify-content: space-between; }
       .headerBot .botItems ul li {
-        padding-left: 2px;
         width: 23%;
         color: #ffffff;
         font-size: 18px;
         text-transform: uppercase;
-        font-family: "Montserrat - Regular";
-        font-weight: 400; }
+        font-family: 'Oswald', sans-serif;
+        font-weight: 800; }
         .headerBot .botItems ul li span {
-          font-family: "Montserrat - Bold";
+          font-family: 'Oswald', sans-serif;
           font-size: 24px;
           font-weight: 700; }
       .headerBot .botItems ul li:before {
@@ -180,16 +186,17 @@ header {
 .secTitle {
   margin-top: 90px;
   color: #333333;
-  font-family: "Kaushan Script";
+  font-family: 'Lobster', cursive;
   font-size: 24px;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center; }
 
 .secSubtitle {
   margin-top: 19px;
   color: #333333;
-  font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  font-size: 33px;
+  font-weight: 800;
   text-transform: uppercase; }
   .secSubtitle:after {
     margin: 0 auto;
@@ -253,7 +260,7 @@ header {
   background-color: #95e1d3; }
 
 .sec2Items {
-  width: 80%;
+  width: 100%;
   margin: 0 auto; }
   .sec2Items ul {
     display: -webkit-box;
@@ -264,11 +271,11 @@ header {
     justify-content: center; }
     .sec2Items ul li {
       text-align: center;
-      padding: 80px 0;
+      padding: 80px 5px;
       color: #ffffff;
       font-family: Montserrat;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 500;
       text-transform: uppercase;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -343,13 +350,18 @@ header {
   width: 80%;
   position: relative; }
 
-.item:before {
+#item1:before,
+#item2:before,
+#item3:before,
+#item4:before,
+#item5:before,
+#item6:before {
   position: absolute;
-  left: -20px;
+  left: -30px;
   top: 10px;
   content: '';
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,9 +369,34 @@ header {
   background-position: center;
   background-size: cover; }
 
+#item2:before {
+  background: url("../assest/img/LINE_GRAPH.png") no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+#item3:before {
+  background: url("../assest/img/COMPUTER_/_OK.png") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#item4:before {
+  background: url("../assest/img/BOOK_2.png") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#item5:before {
+  background: url("../assest/img/HOME.png") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#item6:before {
+  background: url("../assest/img/IMAGE.png") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 .itemTitle {
   color: #333333;
-  font-family: Montserrat;
+  font-family: 'Oswald', sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase; }
@@ -368,7 +405,7 @@ header {
   color: #999999;
   font-family: Roboto;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px; }
 
 .sec4 {
@@ -624,7 +661,8 @@ header {
   font-family: "Roboto - Light Italic";
   font-size: 15px;
   font-weight: 400;
-  line-height: 24px; }
+  line-height: 24px;
+  text-align: center; }
 
 .sec7 {
   margin-top: 40px; }
@@ -784,7 +822,7 @@ footer {
   font-weight: 400; }
 
 .subsribe .btn {
-  height: 41px;
+  height: 39px;
   background-color: #95e1d3;
   color: #ffffff;
   font-family: Montserrat;
@@ -862,3 +900,60 @@ footer {
 
 .imgBlock {
   padding: 2px; }
+
+.upper {
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(200px);
+  -ms-transform: translateY(200px);
+  transform: translateY(200px);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 74px; }
+  .upper i {
+    -webkit-animation: 3s linear  infinite upper;
+    animation: 3s linear  infinite upper;
+    color: #333333;
+    background: transparent; }
+
+.showUpper {
+  display: block;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px); }
+
+@-webkit-keyframes upper {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  25% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px); }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  75% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px); }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@keyframes upper {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  25% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px); }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  75% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px); }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }

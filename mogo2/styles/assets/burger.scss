@@ -113,6 +113,12 @@
 
     
 }
+.bodyLock{
+    padding-right: 3px;
+}
+.bodyOverflow{
+    overflow:hidden;
+}
 .burgerOpen{
     transform:translateX(0%);
     transform:translateY(0%);
@@ -125,16 +131,19 @@
 }
 
 .social{
-    transition:.4s;
-    transform:translateY(2000px);
-    margin: 0 auto;
-    margin-top: 10px;   
-    display:  flex;
+    
 
+    transition:.4s;
+    margin: 0 auto;
+       
+    display:  flex;
     @include pushAuto;
     
     
     span{
+        transition:0.4s;
+        perspective: 1000px;
+        transform:rotateX(90deg);    
         @include pushAuto;
         display:flex;
         justify-content:center;
@@ -142,8 +151,7 @@
         cursor: pointer;
         margin-right: 10px; 
         border-radius:50%;
-        width: 100px;
-        height: 100px;
+        padding: 20px;
         color: #fff;
         font-family: Montserrat;
         font-size: 10px;
@@ -211,4 +219,7 @@
 
 .socialOpen{
     transform:translateY(10px);
+    span{
+        transform:rotateX(0deg);    
+    }
 }       
