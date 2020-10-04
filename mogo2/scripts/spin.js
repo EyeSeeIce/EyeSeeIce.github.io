@@ -44,7 +44,7 @@ jQuery(document).ready(function() {
         if (w_top >= w_height - e_height) {
             $('.nu').spincrement({
                 thousandSeparator: "",
-                duration: 2200
+                duration: 6200
             });
             show = false;
         };
