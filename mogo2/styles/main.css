@@ -149,6 +149,7 @@ header {
     line-height: 140px;
     text-transform: uppercase; }
   .headerMid .midBtn {
+    cursor: pointer;
     color: #ffffff;
     font-family: Montserrat;
     font-size: 14px;
