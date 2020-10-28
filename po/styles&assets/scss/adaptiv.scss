@@ -438,6 +438,26 @@
     .sec5Title {
         font-size: 30px;
     }
+    #modal {
+    padding: 4%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    .close{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        right: 0;
+    }
+    .dicrs1{
+        margin: 4px;
+    }
+
+
+
+}
+
+.modalWrapper {}
 
 }
 

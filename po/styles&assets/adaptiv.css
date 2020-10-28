@@ -316,7 +316,19 @@
       font-size: 16px;
       text-decoration: underline; }
   .sec5Title {
-    font-size: 30px; } }
+    font-size: 30px; }
+  #modal {
+    padding: 4%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important; }
+    #modal .close {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      right: 0; }
+    #modal .dicrs1 {
+      margin: 4px; } }
 
 /*400px*/
 @media only screen and (max-width: 400px) {
