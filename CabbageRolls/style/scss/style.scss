@@ -21,7 +21,6 @@
 
 
 body {
-    min-width: 320px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -286,6 +285,7 @@ header {
         .stk{
         	position:absolute;
         	transform: translateX(-100%);
+
         	min-width: 91px;
             min-height: 94px;
             background: #FF0000;
