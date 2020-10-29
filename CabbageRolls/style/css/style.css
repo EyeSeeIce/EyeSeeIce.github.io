@@ -40,7 +40,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 header {
-  min-width: 480px; }
+  width: 480px; }
   header .headerWrapper {
     max-width: 442px;
     margin: 0 auto;
