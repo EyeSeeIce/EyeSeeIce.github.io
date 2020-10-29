@@ -1,0 +1,296 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../../fonts/GothamPro-Black.ttf"); }
+
+@font-face {
+  font-family: 'Gotham Pro-medium';
+  src: url("../../fonts/GothamPro-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Gotham Pro - lihgt';
+  src: url("../../fonts/GothamPro-Light.ttf"); }
+
+@font-face {
+  font-family: 'Gotham Pro - bold';
+  src: url("../../fonts/GothamPro-Bold.ttf"); }
+
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+header {
+  min-width: 480px; }
+  header .headerWrapper {
+    max-width: 442px;
+    margin: 0 auto;
+    padding-bottom: 20px; }
+    header .headerWrapper .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    header .headerWrapper .headerMain {
+      min-height: 579px; }
+    header .headerWrapper .headerContent {
+      font-family: Gotham Pro; }
+      header .headerWrapper .headerContent .title h1 {
+        margin: 0 !important;
+        padding-top: 30px;
+        padding-left: 17px;
+        text-align: center;
+        font-size: 41px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #48509A;
+        font-style: normal;
+        font-weight: 900; }
+      header .headerWrapper .headerContent .subtitle {
+        margin: 0 !important; }
+        header .headerWrapper .headerContent .subtitle h2 {
+          font-family: 'Gotham Pro - lihgt';
+          padding-left: 9px;
+          margin: 0 !important;
+          font-size: 28px;
+          line-height: 24px;
+          text-align: center;
+          color: #000000; }
+      header .headerWrapper .headerContent .stockValue {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        padding-right: 15px;
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 73px;
+        text-align: right;
+        color: #FAFF00; }
+  header .stockTimer .timerTitle h2 {
+    padding-left: 8px;
+    letter-spacing: 0.2px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #000000; }
+  header .stockTimer .timerContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header .stockTimer .timerContent .cont {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    header .stockTimer .timerContent .item {
+      min-width: 52px;
+      height: 70px;
+      background: #C4C4C4;
+      border-radius: 3px;
+      margin-top: 3px;
+      padding: 14px 9px;
+      font-family: Gotham Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 90.7%;
+      color: #000000;
+      margin-right: 6.5px;
+      margin-left: 6.5px; }
+      header .stockTimer .timerContent .item:nth-child(1) {
+        margin-left: 0; }
+    header .stockTimer .timerContent .sec .item:last-child {
+      margin-right: 0; }
+  header .stockTimer .hr,
+  header .stockTimer .min {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  header .stockTimer .hr:after,
+  header .stockTimer .min:after {
+    content: ':';
+    position: absolute;
+    right: -20%;
+    top: 0;
+    display: inline-block;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 67px;
+    /* identical to box height, or 42px */
+    color: #000000;
+    height: 70px; }
+  header .stockTimer span {
+    display: block;
+    font-family: 'Gotham Pro - lihgt';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    text-align: center;
+    text-transform: lowercase; }
+
+.avgs {
+  width: 100%;
+  background: #4A519A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .avgs .avg {
+    width: 33.33%;
+    min-height: 158px; }
+    .avgs .avg .ico {
+      padding: 10px 40px;
+      padding-bottom: 3px; }
+    .avgs .avg .avgTitle {
+      width: 80%;
+      margin: 0 auto;
+      font-family: 'Gotham Pro - lihgt';
+      font-size: 15px;
+      text-align: center;
+      color: #FFFFFF; }
+
+.new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .new .left {
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #E0DDDD; }
+    .new .left .def {
+      font-family: 'Gotham Pro-medium';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 37px;
+      text-align: center;
+      color: #000000; }
+      .new .left .def span {
+        font-family: 'Gotham Pro - light';
+        font-size: 25px;
+        letter-spacing: 2px; }
+  .new .right {
+    position: relative;
+    background: #FFE600;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .new .right .stk {
+      position: absolute;
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+      min-width: 91px;
+      min-height: 94px;
+      background: #FF0000;
+      -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      font-family: Gotham Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 21.6px;
+      line-height: 92.7%;
+      color: #FFFFFF; }
+      .new .right .stk span {
+        font-size: 35px;
+        line-height: 35px; }
+    .new .right .newPr {
+      padding: 5px;
+      font-family: 'Gotham Pro';
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      color: #000000; }
+      .new .right .newPr span {
+        font-family: 'Gotham Pro - light';
+        font-size: 25px;
+        letter-spacing: 2px; }
+    .new .right .newPrice {
+      line-height: 52px;
+      font-size: 43px; }
+
+.btn {
+  cursor: pointer;
+  padding-top: 57px;
+  max-width: 449px;
+  margin: 0 auto; }
+  .btn span {
+    padding: 20px 24px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 92.7%;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(266.93deg, #8793FF 28.77%, #474F9A 97.45%);
+    background: -o-linear-gradient(266.93deg, #8793FF 28.77%, #474F9A 97.45%);
+    background: linear-gradient(183.07deg, #8793FF 28.77%, #474F9A 97.45%);
+    -webkit-box-shadow: 0px 22px 44px -12px rgba(37, 70, 144, 0.35);
+    box-shadow: 0px 22px 44px -12px rgba(37, 70, 144, 0.35);
+    border-radius: 100px;
+    color: #FFFFFF; }
