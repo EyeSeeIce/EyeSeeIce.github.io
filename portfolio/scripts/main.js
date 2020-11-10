@@ -47,7 +47,7 @@ window.addEventListener('scroll', function(){
     }
 })    
 document.querySelector('.upper').addEventListener('click', function(){
-        document.querySelector('a[href*="#about"]').scrollIntoView({
+        document.querySelector('header"]').scrollIntoView({
                 block: "center", behavior: "smooth"
             })
 })
