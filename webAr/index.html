@@ -3,18 +3,25 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <link rel="stylesheet" href="style.css">
   <body style="margin : 0px; overflow: hidden;">
+    
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-        <a-entity
+        <a-entity id='me'
           position="0 0 0"
           scale="1 1 1"
-          gltf-model='me.gltf'
-        ></a-entity>
+          rotation="20 -120 90"
+          gltf-model="me.gltf"
+
+        >
+          <a-animation attribute='rotation' begin='rotate' end=
+        'endRotate' dur='6000' fill='forwards' to='0 270 0' repeat='indefinite' easing='linear' ></a-animation>
+        </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
-    <a-scene inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
-</a-scene>
+    <div class="btn"></div>
   </body>
+  <script src='js.js'></script>
 </html>
