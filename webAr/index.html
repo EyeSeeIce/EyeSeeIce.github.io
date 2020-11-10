@@ -5,18 +5,16 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <link rel="stylesheet" href="style.css">
   <body style="margin : 0px; overflow: hidden;">
-    
+    <!-- rotation="20 -150 90" -->
     <a-scene embedded arjs>
       <a-marker preset="hiro">
         <a-entity id='me'
-          position="0 0 0"
-          scale="1 1 1"
-          rotation="20 -150 90"
-          gltf-model="me.gltf"
-
+          position="0.4 0 0"
+          scale="3 3 3"
+          rotation="-90 0 0"
+          gltf-model="mecard.gltf"
         >
-          <a-animation attribute='rotation' begin='rotate' end=
-        'endRotate' dur='6000' fill='forwards' to='0 270 0' repeat='indefinite' easing='linear' ></a-animation>
+       
         </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
