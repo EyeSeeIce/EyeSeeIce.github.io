@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+header {
+  padding-left: 10px;
+  background: url("../../assets/header/bg6.png") 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+header .mainContent {
+  padding-top: 150px;
+  width: 90%;
+}
+header h1 {
+  color: #fff;
+  font-size: 72px;
+}
+header h1 span {
+  font-size: 84px;
+  font-weight: 700;
+  color: crimson;
+  text-decoration: underline;
+}
+header h2 {
+  width: 70%;
+  position: relative;
+  z-index: 2;
+  padding-top: 60px;
+  color: #fff;
+  font-size: 32px;
+}
+header .img {
+  display: flex;
+  width: 50%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+header .img img {
+  width: 100%;
+}
+header .download {
+  cursor: pointer;
+  padding-top: 50px;
+  font-size: 25px;
+  color: #fff;
+}
+header .download .downloadBtn {
+  background: rgba(250, 235, 215, 0.2);
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+header .download .downloadBtn:hover {
+  background: rgba(250, 235, 215, 0.9);
+  color: black;
+}
+
+.sec1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5effa;
+  color: #303030;
+}
+.sec1 .sec1Top {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  text-align: center;
+  font-size: 32px;
+}
+.sec1 .sec1Mid {
+  display: flex;
+}
+.sec1 .sec1Mid .midLeft {
+  padding-left: 10px;
+  width: 40%;
+  font-size: 22px;
+}
+.sec1 .sec1Mid .midLeft li {
+  cursor: pointer;
+  box-sizing: border-box;
+  border-right: 2px solid #dbe2e2;
+  padding: 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sec1 .sec1Mid .midLeft li span {
+  padding-left: 5px;
+}
+.sec1 .sec1Mid .midRight {
+  padding: 30px;
+  width: 70%;
+  font-size: 18px;
+}
+
+.sec2 {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/header/bg6.png") no-repeat;
+  background-size: cover;
+}
+.sec2 .sec2Top {
+  padding: 25px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+.sec2 .sec2Top h2 {
+  font-weight: 800;
+  color: #d1ebfd;
+}
+.sec2 .sec2Mid {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.sec2 .sec2Mid .steep {
+  padding: 30px 0px;
+  color: #c6c0c0;
+}
+.sec2 .sec2Mid .steep:nth-child(2) {
+  text-align: right;
+}
+.sec2 .sec2Mid .steep:nth-child(4) {
+  text-align: right;
+}
+.sec2 .sec2Mid .title {
+  padding-bottom: 5px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.sec2 .sec2Mid .desc {
+  font-size: 18px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.showFlex {
+  display: flex;
+}
+
+.activeTrigger {
+  border-right: 4px solid #25a8ff !important;
+}
+.activeTrigger i {
+  color: #25a8ff;
+}
+
+/*# sourceMappingURL=style.css.map */
